@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		3F582D4A2802F39F002DEDF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D492802F39F002DEDF8 /* AppDelegate.swift */; };
 		3F582D4C2802F39F002DEDF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D4B2802F39F002DEDF8 /* SceneDelegate.swift */; };
-		3F582D4E2802F39F002DEDF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D4D2802F39F002DEDF8 /* ViewController.swift */; };
+		3F582D4E2802F39F002DEDF8 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D4D2802F39F002DEDF8 /* HouseDetailViewController.swift */; };
 		3F582D512802F39F002DEDF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F582D4F2802F39F002DEDF8 /* Main.storyboard */; };
 		3F582D532802F3A1002DEDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F582D522802F3A1002DEDF8 /* Assets.xcassets */; };
 		3F582D562802F3A1002DEDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F582D542802F3A1002DEDF8 /* LaunchScreen.storyboard */; };
+		3F582D5E2802F3BB002DEDF8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D5D2802F3BB002DEDF8 /* MainViewController.swift */; };
+		3F582D60280304C8002DEDF8 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D5F280304C8002DEDF8 /* UserActionCell.swift */; };
+		3F582D6228030C4C002DEDF8 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D6128030C4C002DEDF8 /* House.swift */; };
+		3F582D6A28033CBD002DEDF8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F582D6928033CBD002DEDF8 /* NetworkManager.swift */; };
+		3FF99C282807623200F0EDC5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3FF99C272807623200F0EDC5 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F582D462802F39F002DEDF8 /* Homework 2.10 URLSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 2.10 URLSession.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F582D492802F39F002DEDF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F582D4B2802F39F002DEDF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F582D4D2802F39F002DEDF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F582D4D2802F39F002DEDF8 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		3F582D502802F39F002DEDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F582D522802F3A1002DEDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F582D552802F3A1002DEDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F582D572802F3A1002DEDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F582D5D2802F3BB002DEDF8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3F582D5F280304C8002DEDF8 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		3F582D6128030C4C002DEDF8 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		3F582D6928033CBD002DEDF8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF99C282807623200F0EDC5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,75 @@
 		3F582D482802F39F002DEDF8 /* Homework 2.10 URLSession */ = {
 			isa = PBXGroup;
 			children = (
-				3F582D492802F39F002DEDF8 /* AppDelegate.swift */,
-				3F582D4B2802F39F002DEDF8 /* SceneDelegate.swift */,
-				3F582D4D2802F39F002DEDF8 /* ViewController.swift */,
-				3F582D4F2802F39F002DEDF8 /* Main.storyboard */,
-				3F582D522802F3A1002DEDF8 /* Assets.xcassets */,
-				3F582D542802F3A1002DEDF8 /* LaunchScreen.storyboard */,
-				3F582D572802F3A1002DEDF8 /* Info.plist */,
+				3F582D68280339BD002DEDF8 /* Services */,
+				3F582D6328032A3B002DEDF8 /* Models */,
+				3FF99C25280759E800F0EDC5 /* View */,
+				3F582D6528032A66002DEDF8 /* ViewControllers */,
+				3F582D6628032A75002DEDF8 /* Storyboards */,
+				3F582D6428032A4B002DEDF8 /* App */,
+				3F582D6728032A93002DEDF8 /* Resources */,
 			);
 			path = "Homework 2.10 URLSession";
+			sourceTree = "<group>";
+		};
+		3F582D6328032A3B002DEDF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F582D6128030C4C002DEDF8 /* House.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F582D6428032A4B002DEDF8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3F582D492802F39F002DEDF8 /* AppDelegate.swift */,
+				3F582D4B2802F39F002DEDF8 /* SceneDelegate.swift */,
+				3F582D572802F3A1002DEDF8 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F582D6528032A66002DEDF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F582D4D2802F39F002DEDF8 /* HouseDetailViewController.swift */,
+				3F582D5D2802F3BB002DEDF8 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F582D6628032A75002DEDF8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3F582D4F2802F39F002DEDF8 /* Main.storyboard */,
+				3F582D542802F3A1002DEDF8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3F582D6728032A93002DEDF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F582D522802F3A1002DEDF8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F582D68280339BD002DEDF8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3F582D6928033CBD002DEDF8 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3FF99C25280759E800F0EDC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F582D5F280304C8002DEDF8 /* UserActionCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,9 @@
 			dependencies = (
 			);
 			name = "Homework 2.10 URLSession";
+			packageProductDependencies = (
+				3FF99C272807623200F0EDC5 /* Alamofire */,
+			);
 			productName = "Homework 2.10 URLSession";
 			productReference = 3F582D462802F39F002DEDF8 /* Homework 2.10 URLSession.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 3F582D3D2802F39F002DEDF8;
+			packageReferences = (
+				3FF99C262807623200F0EDC5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3F582D472802F39F002DEDF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F582D4E2802F39F002DEDF8 /* ViewController.swift in Sources */,
+				3F582D60280304C8002DEDF8 /* UserActionCell.swift in Sources */,
+				3F582D4E2802F39F002DEDF8 /* HouseDetailViewController.swift in Sources */,
 				3F582D4A2802F39F002DEDF8 /* AppDelegate.swift in Sources */,
+				3F582D6A28033CBD002DEDF8 /* NetworkManager.swift in Sources */,
+				3F582D6228030C4C002DEDF8 /* House.swift in Sources */,
 				3F582D4C2802F39F002DEDF8 /* SceneDelegate.swift in Sources */,
+				3F582D5E2802F3BB002DEDF8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +371,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7KD7ZDKV3W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework 2.10 URLSession/Info.plist";
+				INFOPLIST_FILE = "Homework 2.10 URLSession/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +399,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7KD7ZDKV3W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework 2.10 URLSession/Info.plist";
+				INFOPLIST_FILE = "Homework 2.10 URLSession/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FF99C262807623200F0EDC5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FF99C272807623200F0EDC5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FF99C262807623200F0EDC5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F582D3E2802F39F002DEDF8 /* Project object */;
 }

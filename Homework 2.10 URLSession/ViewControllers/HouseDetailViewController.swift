@@ -7,11 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HouseDetailViewController: UIViewController {
+    var house: House!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(house)
     }
 
 
